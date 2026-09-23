@@ -13,7 +13,13 @@ const afterCandle = document.getElementById("after-candle");
 
 const continueButton = document.getElementById("continue-button");
 const mainContent = document.getElementById("main-content");
+setTimeout(function() {
+    flame.classList.add("flame-out");
 
+     setTimeout(function() {
+        afterCandle.classList.remove("hidden");
+    }, 1000);
+}, 5000);
 
 /* PASSWORD */
 

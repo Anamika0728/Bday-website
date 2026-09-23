@@ -109,33 +109,34 @@ button {
 
 #candle-area {
     position: relative;
-
-    width: min(90vw, 500px);
-
-    margin: 30px auto;
-
+    width: 100%;
+    max-width: 400px;
+    height: 180px;
+    margin: 35px auto;
     touch-action: none;
     user-select: none;
 }
 
-.birthday-cake {
-    width: clamp(320px, 65vw, 600px);
-    height: auto;
+.candle {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
 
-    display: block;
-    margin: 0 auto;
+    width: 55px;
+    height: 115px;
+
+    background: #f4e184;
+    border-radius: 8px;
 }
 
 #flame {
     position: absolute;
-
-    top: 21%;
-    left: 51%;
-
+    top: -20px;
+    left: 50%;
     transform: translateX(-50%);
 
-    font-size: 32px;
-
+    font-size: 38px;
     z-index: 2;
 
     transition:
